@@ -1,0 +1,2 @@
+https://jsfiddle.net/Asifuzzaman/fs96h8m4/
+This is a fiddle for new navbar closing and opening which Jatin is going to implement
