@@ -18,6 +18,9 @@
   width:100%;
   height:500px;
   background: url('https://images.unsplash.com/photo-1438109491414-7198515b166b?q=80&fm=jpg&s=cbdabf7a79c087a0b060670a6d79726c');
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+
   
   background-repeat: no-repeat;
   background-position: center;
@@ -30,6 +33,39 @@
   text-align: center;
   text-decoration-color: red;
 }
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+} 
+* {
+  box-sizing: border-box;
+}
+  .bg-1 {
+    background-color: #1abc9c; /* Green */
+    color: #ffffff;
+    border-radius: 10px;
+  }
+  .bg-2 {
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+     border-radius: 10px;
+  }
+  .bg-3 {
+    background-color: #ffffff; /* White */
+    color: #555555;
+     border-radius: 10px;
+  }
 
 </style>    
 
@@ -37,43 +73,71 @@
   <body class="back">
 <!-- Header video -->
 <header>
-<div class="overlay"><span style="font-size:30px;cursor:pointer;display: block;color: yellow;,font-weight: bold;display: block;" class="fixed-top"id="button" onclick="openNav()">&#9776;</span></div>
-    
-    <section class="bgimage">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-       <h1> About Me</h1>
-      </div>
-    </div>
-  </div>
-</section>
-</header>
-<div id="mySidenav" class="sidenav">
+<div class="overlay"><span style="font-size:60px;cursor:pointer;display: block;color: yellow;,font-weight: bold;display: block;" class="fixed-top"id="button" onclick="openNav()">&#9776;</span></div>
+    <div id="mySidenav" class="sidenav ">
   <a href="javascript:void(0)" class="closebtn" id="close"onclick="closeNav()">&times;</a>
   <a href="Homepage.html">Home</a>
   <a href="AboutUs.html" class="active">About</a>
   <a href="www.youtube.com">Videos</a>
   <a href="ContactUs.html" >Contact</a>
 </div>
+    <section class="bgimage">
+  <div class="container-fluid">
+    <div class="row">
+      
+    </div>
+  </div>
+</section>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bg-text" id="hide">
+       <h1 class="display-3"> About Me</h1>
+      </div>
+</header>
 
-<div id="main">
+<div>
+<div class="container-fluid bg-1 text-center card"style="border-radius: 10px">
+    <h3 class="card-text">Who Am I?</h3>
+    <img src="picprof.jpg " class="rounded-circle img-fluid mx-auto d-block" alt="Bird" width="300px" height="300px">
+    <h3>I'm an adventurer</h3>
+    <p style="padding: 10px 10px 10px 0px ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget lectus id neque pharetra fringilla. Donec maximus risus nec libero imperdiet scelerisque. Praesent vitae facilisis velit. Etiam sed ipsum magna. Suspendisse at tristique erat. Phasellus eleifend magna eros, non eleifend felis tristique a. Aenean justo tortor, mollis ac rhoncus sed, vulputate at leo.
 
-  
+In fermentum faucibus augue non tempus. Curabitur sed nibh at arcu aliquam vehicula. Vestibulum sit amet ligula mi. Aenean magna arcu, vestibulum eget augue at, ullamcorper vestibulum ex. Vestibulum gravida varius metus, nec cursus mauris porta non. Suspendisse dolor velit, congue vel scelerisque non, porttitor ac libero. Aenean leo lectus, dapibus sit amet sem eget, accumsan tincidunt est. Quisque suscipit risus sem, ut scelerisque eros interdum quis. Donec dignissim rutrum imperdiet. Aenean tristique ut massa non elementum. Nam vestibulum ipsum eu nunc elementum dictum.
+
+Etiam ligula tortor, pellentesque id tincidunt in, tempor eu justo. Mauris mattis, tellus at lobortis luctus, sapien lacus egestas eros, vel congue mi lectus vel lorem. Donec ac porttitor ipsum, dapibus posuere lectus. Proin vehicula justo vitae sem auctor, ac imperdiet justo vehicula. Aenean vehicula ornare arcu a interdum. Praesent massa nisl, aliquam vitae accumsan ac, posuere ut augue. Suspendisse maximus diam in eros laoreet, et tristique nibh consequat. Donec metus ligula, blandit eget dui sit amet, hendrerit semper metus. Proin molestie lacus nec condimentum tincidunt. Aliquam ultricies ut tellus ut ullamcorper. Morbi a elementum ligula. Nullam posuere justo eget sodales commodo. Quisque interdum pulvinar enim, a condimentum turpis volutpat vitae. Praesent risus tortor, sodales id neque a, aliquam bibendum lacus. Nullam fringilla pellentesque orci sed posuere. Donec et tortor vitae elit ullamcorper vehicula.</p>
+  </div>
+  <div class="container-fluid bg-2 text-center card">
+  <h3 class="card-text">What Am I?</h3>
+  <p>Lorem ipsum..
+  Etiam ligula tortor, pellentesque id tincidunt in, tempor eu justo. Mauris mattis, tellus at lobortis luctus, sapien lacus egestas eros, vel congue mi lectus vel lorem. Donec ac porttitor ipsum, dapibus posuere lectus. Proin vehicula justo vitae sem auctor, ac imperdiet justo vehicula. Aenean vehicula ornare arcu a interdum. Praesent massa nisl, aliquam vitae accumsan ac, posuere ut augue. Suspendisse maximus diam in eros laoreet, et tristique nibh consequat. Donec metus ligula, blandit eget dui sit amet, hendrerit semper metus. Proin molestie lacus nec condimentum tincidunt. Aliquam ultricies ut tellus ut ullamcorper. Morbi a elementum ligula. Nullam posuere justo eget sodales commodo. Quisque interdum pulvinar enim, a condimentum turpis volutpat vitae. Praesent risus tortor, sodales id neque a, aliquam bibendum lacus. Nullam fringilla pellentesque orci sed posuere. Donec et tortor vitae elit ullamcorper vehicula.
+
+Fusce pellentesque diam mi, at rhoncus lectus gravida nec. Praesent ac mauris eu quam mattis luctus ac at libero. Nullam sed risus at lectus consectetur suscipit. Donec id porta nisl. Nullam finibus, mi pulvinar ornare semper, est dui pulvinar augue, sit amet sagittis tortor nulla ac tellus. Fusce in dictum risus. Ut non dignissim elit, sit amet auctor elit. Phasellus in sollicitudin ante. Nam in varius urna. Etiam lacinia est ut libero pellentesque, at ultrices sem tincidunt. Aliquam blandit turpis odio, nec egestas diam auctor quis. Pellentesque eget ligula a orci varius ultricies ut sed eros. Vestibulum congue mi quis varius ornare. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu scelerisque turpis, sed sodales nulla.</p>
+</div>
+<div class="container-fluid bg-3 text-center card">
+  <h3 class="card-text">What  i do?</h3>
+  <p>Lorem ipsum.
+  Etiam ligula tortor, pellentesque id tincidunt in, tempor eu justo. Mauris mattis, tellus at lobortis luctus, sapien lacus egestas eros, vel congue mi lectus vel lorem. Donec ac porttitor ipsum, dapibus posuere lectus. Proin vehicula justo vitae sem auctor, ac imperdiet justo vehicula. Aenean vehicula ornare arcu a interdum. Praesent massa nisl, aliquam vitae accumsan ac, posuere ut augue. Suspendisse maximus diam in eros laoreet, et tristique nibh consequat. Donec metus ligula, blandit eget dui sit amet, hendrerit semper metus. Proin molestie lacus nec condimentum tincidunt. Aliquam ultricies ut tellus ut ullamcorper. Morbi a elementum ligula. Nullam posuere justo eget sodales commodo. Quisque interdum pulvinar enim, a condimentum turpis volutpat vitae. Praesent risus tortor, sodales id neque a, aliquam bibendum lacus. Nullam fringilla pellentesque orci sed posuere. Donec et tortor vitae elit ullamcorper vehicula.
+
+Fusce pellentesque diam mi, at rhoncus lectus gravida nec. Praesent ac mauris eu quam mattis luctus ac at libero. Nullam sed risus at lectus consectetur suscipit. Donec id porta nisl. Nullam finibus, mi pulvinar ornare semper, est dui pulvinar augue, sit amet sagittis tortor nulla ac tellus. Fusce in dictum risus. Ut non dignissim elit, sit amet auctor elit. Phasellus in sollicitudin ante. Nam in varius urna. Etiam lacinia est ut libero pellentesque, at ultrices sem tincidunt. Aliquam blandit turpis odio, nec egestas diam auctor quis. Pellentesque eget ligula a orci varius ultricies ut sed eros. Vestibulum congue mi quis varius ornare. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu scelerisque turpis, sed sodales nulla..</p>
+</div>
 </div>
 
 <script>
 function openNav() {
   document.getElementById("mySidenav").style.width = "200px";
-  document.getElementById("main").style.marginLeft = "200px";
+  // document.getElementById("main").style.marginLeft = "200px";
+  document.getElementById("button").style.transition=".9s";
   document.getElementById("button").style.display="none";
+   document.getElementById("hide").style.transition=".5s";
+  document.getElementById("hide").style.opacity="0";
   
 }
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("button").style.transition=".9s";
   document.getElementById("button").style.display="block";
-  document.getElementById("main").style.marginLeft= "0";
+  // document.getElementById("main").style.marginLeft= "0";
+  document.getElementById("hide").style.transition=".5s";
+   document.getElementById("hide").style.opacity="1.0";
  
 }
 
