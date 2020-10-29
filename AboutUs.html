@@ -1,0 +1,99 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <!-- Font awesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
+   <link rel="stylesheet" type="text/css" href="NAV.css"> 
+
+    <title>Anavkar's Arts | About Us</title>
+<style type="text/css">
+  .bgimage {
+  width:100%;
+  height:500px;
+  background: url('https://images.unsplash.com/photo-1438109491414-7198515b166b?q=80&fm=jpg&s=cbdabf7a79c087a0b060670a6d79726c');
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  background-attachment: fixed;
+}
+.bgimage h1 {
+  color:white;
+  text-shadow:2px 2px #333;
+  text-align: center;
+  text-decoration-color: red;
+}
+
+</style>    
+
+  </head>
+  <body class="back">
+<!-- Header video -->
+<header>
+<div class="overlay"><span style="font-size:30px;cursor:pointer;display: block;color: yellow;,font-weight: bold;display: none;" class="fixed-top"id="button" onclick="openNav()">&#9776;</span></div>
+    
+    <section class="bgimage">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+       <h1> About Me</h1>
+      </div>
+    </div>
+  </div>
+</section>
+</header>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" id="close"onclick="closeNav()">&times;</a>
+  <a href="Homepage.html">Home</a>
+  <a href="AboutUs.html">About</a>
+  <a href="www.youtube.com">Videos</a>
+  <a href="ContactUs.html" class="active">Contact</a>
+</div>
+
+<div id="main">
+<!-- <section class="bgimage">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h5>Hello, world! Full width Hero-unit header</h5>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <p>Learn more »</p>
+      </div>
+    </div>
+  </div>
+</section> -->
+  
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "200px";
+  document.getElementById("main").style.marginLeft = "200px";
+  document.getElementById("button").style.display="none";
+  
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("button").style.display="block";
+  document.getElementById("main").style.marginLeft= "0";
+ 
+}
+
+
+
+</script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+   
+  </body>
+</html>
